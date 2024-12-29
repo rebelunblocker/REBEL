@@ -47,6 +47,8 @@ if(window.location.pathname === "/index.html" || window.location.pathname === "/
   bar.addEventListener("blur", () => {
     search.style.marginLeft = "-150px";
   });
+  document.body.appendChild(img);
+}
 window.addEventListener("load", function() {
   loadScript("/worker.js");
   if(window.location.pathname === "/index.html" || window.location.pathname === "/") {
